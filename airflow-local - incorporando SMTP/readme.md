@@ -1,14 +1,16 @@
 __Para poder ejectutar las pruebas:__    
 1. En el directorio "AIRFLOW-LOCAL - INCORPORANDO SMTP" colocar un archivo .env con las credenciales aportadas (para el caso de windows).
 2. Colocar en el directorio principal un archivo con el nombre "airflow.cfg" que incluya el contenido que se dio cómo ejemplo en la clase 11 (https://github.com/lucastrubiano/dateng_coder/blob/master/Semana_11/Video5_Airflow_cfg/airflow.cfg).
-3. Editar los siguientes parámetros:
+3. Editar los siguientes parámetros: 
+~~~
     -min_file_process_interval = 0 
-    -dag_dir_list_interval = 60
-    -smtp_host = smtp.gmail.com
-    -smtp_user = remitente@gmail.com # mail del remitente
-    -smtp_password = contraseñadeaplicación # ver https://support.google.com/mail/answer/185833?hl=es-419
-    -smtp_port = 587
-    -smtp_mail_from = remitente@gmail.com
+    -dag_dir_list_interval = 60 
+    -smtp_host = smtp.gmail.com 
+    -smtp_user = remitente@gmail.com # mail del remitente 
+    -smtp_password = contraseñadeaplicación # ver https://support.google.com/mail/answer/185833?hl=es-419 
+    -smtp_port = 587 
+    -smtp_mail_from = remitente@gmail.com 
+~~~
 
 4. Crear ".env" dentro del directorio plugins con las credenciales de Redshift y las variables correspondiente a remitente, contraseña de aplicación y destinatario(usar los nombres de variables que fueron adjuntados con la entrega).
 5. Correr el siguiente comando parado en la carpeta principal donde se encuentra el docker-compose.

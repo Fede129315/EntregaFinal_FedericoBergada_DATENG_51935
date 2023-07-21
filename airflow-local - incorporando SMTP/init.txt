@@ -1,0 +1,8 @@
+# para el caso de linux correr el siguiente comando antes de ejecutar
+mkdir ./dags ./logs ./plugins
+echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
+# agregar el comentarior de la url de apache donde estan estas instrucciones
+2.docker-compose up airflow-init
+3.docker-compose build
+4.docker-compose up
+5.crear .env dentro del directorio plugins con las credenciales que se pasaron
